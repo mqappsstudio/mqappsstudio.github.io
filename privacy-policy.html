@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Pro - Privacy Policy</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+        h1 { color: #0078D4; border-bottom: 2px solid #0078D4; padding-bottom: 10px; }
+        h2 { color: #0078D4; margin-top: 30px; }
+        .updated { color: #666; font-style: italic; margin-bottom: 30px; }
+        .highlight { background: #E8F4FD; padding: 15px; border-radius: 8px; border-left: 4px solid #0078D4; margin: 15px 0; }
+        .no-data { background: #E8F5E9; padding: 15px; border-radius: 8px; border-left: 4px solid #4CAF50; margin: 15px 0; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px 14px; text-align: left; }
+        th { background: #0078D4; color: white; }
+        tr:nth-child(even) { background: #f9f9f9; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #888; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <h1>Calendar Pro — Privacy Policy</h1>
+    <p class="updated">Last updated: February 7, 2026 &nbsp;|&nbsp; Version 1.2.0</p>
+
+    <div class="no-data">
+        <strong>The short version:</strong> Calendar Pro does not collect, transmit, or share any of your data. 
+        Everything stays on your computer. The app works completely offline.
+    </div>
+
+    <h2>1. Information We DO NOT Collect</h2>
+    <p>Calendar Pro does NOT collect, access, store, or transmit any of the following:</p>
+    <ul>
+        <li>Your name, email address, or Microsoft account information</li>
+        <li>Your location, IP address, or device identifiers</li>
+        <li>Your browsing history or usage patterns</li>
+        <li>Your task descriptions, calendar entries, or any personal content</li>
+        <li>Your computer name, hostname, or Windows username</li>
+        <li>Analytics, telemetry, or crash reports to any server</li>
+    </ul>
+
+    <h2>2. Data Stored Locally on Your Device</h2>
+    <p>Calendar Pro stores the following data <strong>only on your device</strong>, in your local app data folder:</p>
+    
+    <table>
+        <tr><th>Data</th><th>Location</th><th>Purpose</th></tr>
+        <tr><td>Tasks &amp; reminders</td><td>%LocalAppData%\CalendarPro\tasks.json</td><td>Your calendar data</td></tr>
+        <tr><td>App settings</td><td>%LocalAppData%\CalendarPro\settings.json</td><td>Your preferences</td></tr>
+        <tr><td>Diagnostic logs</td><td>%LocalAppData%\CalendarPro\CalendarPro_Diagnostics.log</td><td>Troubleshooting (see Section 3)</td></tr>
+        <tr><td>Task backup</td><td>Documents\CalendarPro\tasks_backup.json</td><td>Automatic backup of your tasks</td></tr>
+    </table>
+    
+    <p>This data is never transmitted to any server. It never leaves your device unless you explicitly export it.</p>
+
+    <h2>3. Diagnostic Logging (New in v1.2.0)</h2>
+    <p>Calendar Pro writes a diagnostic log file on your device to help troubleshoot issues. This log contains only <strong>system-level information</strong> — never personal content.</p>
+    
+    <div class="highlight">
+        <strong>What IS logged (safe, non-personal data):</strong>
+        <ul>
+            <li>Windows version and build number (e.g., "Windows 11 Build 22631")</li>
+            <li>.NET runtime version and system architecture</li>
+            <li>Display scaling and total system memory</li>
+            <li>App version and install type (Store, sideloaded, etc.)</li>
+            <li>Microsoft Store license status (active/inactive)</li>
+            <li>Notification system status (enabled/disabled in Windows Settings)</li>
+            <li>Task counts (total, today's, with reminders — numbers only)</li>
+            <li>Error messages and code-level stack traces</li>
+            <li>Notification lifecycle events (sent, delivered, snoozed, failed)</li>
+        </ul>
+    </div>
+
+    <div class="no-data">
+        <strong>What is NEVER logged:</strong>
+        <ul>
+            <li>Task descriptions, titles, or content of any kind</li>
+            <li>File paths containing your Windows username (automatically replaced with "[USER]")</li>
+            <li>Microsoft account email address</li>
+            <li>Computer name or hostname</li>
+            <li>IP addresses or network information</li>
+            <li>Any personally identifiable information</li>
+        </ul>
+    </div>
+
+    <p><strong>Log file management:</strong></p>
+    <ul>
+        <li>Maximum size: ~2 MB (automatically rotated — old entries are discarded)</li>
+        <li>You can export the log for support: Settings → Diagnostics → Export</li>
+        <li>You can copy the log to clipboard: Settings → Diagnostics → Copy</li>
+        <li>You can delete the log at any time: Settings → Diagnostics → Clear</li>
+        <li>The log file is stored <strong>only on your device</strong> and is never transmitted automatically</li>
+    </ul>
+
+    <h2>4. Network Access</h2>
+    <p>Calendar Pro operates <strong>entirely offline</strong>. The app does not make any network requests. 
+    The <code>internetClient</code> capability in the app manifest is included only because it is required 
+    by the Windows App SDK framework — it is not used by Calendar Pro.</p>
+
+    <h2>5. Third-Party Services</h2>
+    <p>Calendar Pro does not use any third-party analytics, advertising, tracking, or crash reporting services.</p>
+
+    <h2>6. Data Sharing</h2>
+    <p>Calendar Pro does not share your data with anyone. No data leaves your device unless you explicitly 
+    export your tasks to a CSV file or export diagnostic logs — in both cases, you choose where to save the file.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>Calendar Pro is suitable for all ages and does not collect any personal information from anyone, 
+    including children under 13.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>If we make changes to this privacy policy, we will update the "Last updated" date at the top. 
+    Since Calendar Pro does not collect data, changes are unlikely.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have questions about this privacy policy, contact us at:</p>
+    <p><strong>MQ Apps Studio</strong><br>
+    Email: mqappsstudio@outlook.com</p>
+
+    <footer>
+        <p>© 2026 MQ Apps Studio. All rights reserved.<br>
+        Calendar Pro is a product of MQ Apps Studio</p>
+    </footer>
+</body>
+</html>
